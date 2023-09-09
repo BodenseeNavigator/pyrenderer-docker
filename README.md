@@ -11,10 +11,10 @@ wget -O /data/seamarks_bodensee.osm \
 
 # generate osm file extract
 mkdir log
-python3 /pyrenderer/pyextract.py -g -i /data/seamarks_bodensee.osm -o /data/osm_extracts/ -x_min 268 -y_min 178 -x_max 269 -y_max 179
+python3 /pyrenderer/pyextract.py -g -i /data/seamarks_bodensee.osm -o /data/extracts/ -x_min 268 -y_min 178 -x_max 269 -y_max 179
 
 # generate tiles
-python3 /pyrenderer/pyrenderer.py -i /data/osm_extracts/ -o /data/tiles/
+python3 /pyrenderer/pyrenderer.py -i /data/extracts/osm_extracts/ -o /data/tiles/
 
 ```
 
